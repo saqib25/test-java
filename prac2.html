@@ -8,19 +8,21 @@
 </head>
 <body>
     <script>
-    // var text = "The quick brown fox jumps over the lazy dog";
-    // var startIndex = 0;
-    // var counter = 0;
-    // for(var a = 0; a < text.length ;a++){
-    //     var newIndex = text.indexOf("e",startIndex);
-    //     // =========================^item,^start====
-    //     if(newIndex !== -1){
-    //         counter++;
-    //         startIndex = newIndex + 1;
-    //     }
-    // }
+    var text = "The quick brown fox jumps over the lazy dog";
+    var startIndex = 0;
+    var counter = 0;
+    for(var a = 0; a < text.length ;a++){
+        var newIndex = text.indexOf("e",startIndex);
+        // =========================^item,^start====
+        if(newIndex !== -1){
+            counter++;
+            startIndex=newIndex +1;
+            
+       
+        }
+    }
     
-    // alert(counter);
+    alert(counter);
     
     
 
@@ -29,7 +31,7 @@
     // var monthLength=month.length;
     // alert(monthLength);
 
-    // if (monthLength >3 || month.toLowerCase()== 'may'){
+    // if (monthLength >3 || month.toLowerCase()){
     // alert("correct input");
     // alert(month.slice(0,3));    
     // }
