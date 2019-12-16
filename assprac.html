@@ -17,18 +17,57 @@
     //     console.log(iphone11);
     // }
 
-    var a=prompt("Select The number");
-    var b=Math.ceil(a);
-    alert(b);
-    var c="This is My Dummy Text";
-    var d=c.slice(0,4);
-    alert(d);
+//     var a=prompt("Select The number");
+//     var b=Math.ceil(a);
+//     alert(b);
+//     var c="This is My Dummy Text";
+//     // var d=c.slice(0,4);
+//     // alert(d);
+//     alert(c);
 
-   var e="";
-   for(var i=d.length-1; i>=0; i--){
-   e+=d.charAt(i);    
-   }
-   alert(e);
+//    var e="";
+//    for(var i=c.length-1; i>=0; i--){
+//    e+=c.charAt(i);    
+//    }
+//    alert(e);
+
+var name=prompt("Whats Your Name? ","saqib ali");
+var date=prompt("What is your Date of Birth?" ,25);
+var Month=prompt("What is your Birth Month?" , 02);
+var Year=prompt("What is your Birth Year?" ,1998);
+console.log(date , Month, Year);
+
+var greetings;
+var time = new Date().getHours();
+if (time < 10){
+    greetings = "good Morning";
+}
+else if (time < 15){
+    greetings = "Good AfterNoon";
+}
+else if(time <19){
+    greetings = "Good Evening";
+}
+else{
+    greetings = "Good Night";
+}
+
+
+
+
+console.log("Hello "+ name +" " + greetings );
+
+var DOB=new Date(Month + " " + date + " " + "," + Year);
+console.log(name +" "+"Your Date of birth is "+ DOB); 
+
+var DOA = new Date()
+
+var dt = DOA.getFullYear();
+var dn = DOB.getFullYear();
+var di = dt - dn;
+console.log("You are "+di + " "+"years old");
+
+
     </script>
 </body>
 </html>

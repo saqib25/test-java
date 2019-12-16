@@ -8,21 +8,21 @@
 </head>
 <body>
     <script>
-    var text = "The quick brown fox jumps over the lazy dog";
-    var startIndex = 0;
-    var counter = 0;
-    for(var a = 0; a < text.length ;a++){
-        var newIndex = text.indexOf("e",startIndex);
-        // =========================^item,^start====
-        if(newIndex !== -1){
-            counter++;
-            startIndex=newIndex +1;
+    // var text = "The quick brown fox jumps over the lazy dog";
+    // var startIndex = 0;
+    // var counter = 0;
+    // for(var a = 0; a < text.length ;a++){
+    //     var newIndex = text.indexOf("e",startIndex);
+    //     // =========================^item,^start====
+    //     if(newIndex !== -1){
+    //         counter++;
+    //         startIndex=newIndex +1;
             
        
-        }
-    }
+    //     }
+    // }
     
-    alert(counter);
+    // alert(counter);
     
     
 
@@ -72,6 +72,106 @@
     // alert("city has not been found");    
     // }
     // (=== Done==========)
+
+    /*======== Table print by using For Loop=======
+    ====================================== */
+   
+//    num=3;
+//    for (var i=1; i<=10; i++){
+//     console.log(num + " x " +i + " = " + (num*i));   
+//    }
+
+// =====Table input from user=====
+
+// num=parseInt (prompt("Please Enter Your Number"));
+// for (var i=1; i<=10; i++){
+//     console.log(num + " x " +i + " = "+ (num*i));
+// 
+
+/*============== Prime number=========
+
+====================================== */
+
+// var num=12;
+// for (var i=2; i<num; i++){
+//     var result= num % i;
+//     if (result==0){
+//     console.log("Number is not Prime= " + num + " I " +i);
+//     break;    
+//     }
+// }
+// var num=9;
+// for (var i=2; i<num; i++){
+//     var result= num % i;
+//     if (result==0){
+//     console.log("Number is not Prime= " + num + " I " +i);
+//     break;    
+//     }
+// }
+
+// var num=7;
+// for (var i=2; i<num; i++){
+//     var result= num % i;
+//     if (result==0){
+//     console.log("Number is not Prime= " + num + " I " +i);
+//     break;    
+//     }
+// }
+
+// var num=parseInt (prompt("Please Enter Number"));
+// var isPrime= true;
+// for (var i=2; i<num; i++){
+//     var result= num % i;
+//     if (result==0){
+//     console.log("Number is not Prime= " + num + " I " +i);
+//     isPrime=false;
+//     break;    
+//     }
+//     // else{
+//     //     console.log("Number is not prime= " + num + " I" +1); /*This is worng method */
+//     // }
+// }
+
+// if (isPrime){
+//     console.log("Number is prime" + num);  /*this is true method */
+// }
+// // console.log("Number is not prime= " + num + " I" +1); /*This is worng method */
+
+
+/*========= Prime number End======= */
+
+// var arr=[34,65,75,88,99,100];
+// var input=parseInt (prompt("Enter Your value"));
+// var found=false;
+// console.log("user input = " + input);
+// for (var i=0; i<arr.length; i++){
+//   if (arr[i]===input){
+//   console.log("Found " +input + " on index = "+i);
+//   found=true;
+//   break;    
+//   }  
+// }
+//  if(!found){
+//      console.log("Not Found");
+//  }
+
+/*======= Triangle making======== */
+
+// var triangle=["*","* *","* * *","* * * *","* * * * *","* * * * * *","* * * * * * *"];
+// for(var i=0; i<triangle.length; i++){
+//  document.write(triangle[i] +"<br />"); 
+// }
+
+// var i, j;
+//             for(i=1; i <= 6; i++) {
+//                //inner loop
+//               for(j=1; j<=i; j++) {
+//                  console.log('*');
+//             }
+//             console.log('<br/>');
+//          }
+
+/*========= Triangle making End====== */
 
 
 
